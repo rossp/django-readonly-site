@@ -24,7 +24,7 @@ Installation & Usage
 
 3. Add to your middleware
 
-   `MIDDLEWARE_CLASSES += ('readonly.middleware.ReadOnlySiteMiddleware',')`
+   `MIDDLEWARE_CLASSES += ('readonly.middleware.ReadOnlySiteMiddleware',)`
 
 4. Define the URLs that are not used when your site is in read-only mode
 
