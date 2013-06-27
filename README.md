@@ -28,8 +28,9 @@ Installation & Usage
 
 4. Define the URLs that are not used when your site is in read-only mode
 
-   `READ_ONLY_EXEMPT_PATHS = ('/', '/login/', '/checkout/')
-   READ_ONLY_EXEMPT_PATH_STARTS = ('/accounts/', '/admin/')`
+   ```python
+   READ_ONLY_EXEMPT_PATHS = ('/', '/login/', '/checkout/')
+   READ_ONLY_EXEMPT_PATH_STARTS = ('/accounts/', '/admin/')```
 
 5. Optionally, define the template used when your site goes into read-only mode:
 

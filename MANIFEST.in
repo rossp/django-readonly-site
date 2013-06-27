@@ -1,0 +1,5 @@
+include README.md
+
+recursive-include readonly *.py
+recursive-include readonly/locale *.po *.mo
+recursive-include readonly/templates *.html
