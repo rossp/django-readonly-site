@@ -26,7 +26,7 @@ Installation & Usage
 
    `MIDDLEWARE_CLASSES += ('readonly.middleware.ReadOnlySiteMiddleware',)`
 
-4. Define the URLs that are not used when your site is in read-only mode
+4. Define the URLs that are stil accessible when your site is in read-only mode
 
    ```python
    READ_ONLY_EXEMPT_PATHS = ('/', '/login/', '/checkout/')
