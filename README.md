@@ -26,11 +26,22 @@ Installation & Usage
 
    `MIDDLEWARE_CLASSES += ('readonly.middleware.ReadOnlySiteMiddleware',)`
 
-4. Define the URLs that are still accessible when your site is in read-only mode
+4. You are able to chose beetwen white or black listed paths (but not both at the same time) :
+
+   Define the URLs that are still accessible when your site is in read-only mode :
 
    ```python
    READ_ONLY_EXEMPT_PATHS = ('/', '/about/', '/tour/')
-   READ_ONLY_EXEMPT_PATH_STARTS = ('/admin/')```
+   READ_ONLY_EXEMPT_PATH_STARTS = ('/admin/')
+   ```
+
+   Or the URLs that are NOT accessible when your site is in read-only mode :
+
+   ```python
+   READ_ONLY_PATHS = ('/private/')
+   READ_ONLY_PATH_STARTS = ('/edit/', '/create/')
+   ```
+
 
 5. Optionally, define the template used when your site goes into read-only mode:
 
