@@ -32,13 +32,15 @@ Installation & Usage
 
    ```python
    READ_ONLY_EXEMPT_PATHS = ('/', '/about/', '/tour/')
-   READ_ONLY_EXEMPT_PATH_STARTS = ('/admin/')```
+   READ_ONLY_EXEMPT_PATH_STARTS = ('/admin/')
+   ```
 
    Or the URLs that are NOT accessible when your site is in read-only mode :
 
    ```python
    READ_ONLY_PATHS = ('/private/')
-   READ_ONLY_PATH_STARTS = ('/edit/', '/create/')```
+   READ_ONLY_PATH_STARTS = ('/edit/', '/create/')
+   ```
 
 
 5. Optionally, define the template used when your site goes into read-only mode:
