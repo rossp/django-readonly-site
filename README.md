@@ -40,6 +40,7 @@ Installation & Usage
    READ_ONLY_PATHS = ('/private/')
    READ_ONLY_PATH_STARTS = ('/edit/', '/create/')```
 
+
 5. Optionally, define the template used when your site goes into read-only mode:
 
    `READ_ONLY_TEMPLATE = 'readonly/readonly.html' # This is the default`
