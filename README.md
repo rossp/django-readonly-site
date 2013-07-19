@@ -5,6 +5,8 @@ Take parts of your Django website offline by changing `settings.SITE_READ_ONLY =
 
 It does this by rendering a static template for your data-modifying views. I use this for my accounts page & signup page, so I can effectively freeze the site during big changes or migrations.
 
+Note that django-readonly-site doesn't prevent any database updates. If you need to do this, then you should look at tools that override your database cursor, such as [django-db-readonly](https://github.com/streeter/django-db-readonly) or by doing it at the database level with Postgres slaves or similar. I don't require this for my purposes, and there's no point adding duplicate functionality to this app.
+
 Pre-Requisites
 --------------
 
