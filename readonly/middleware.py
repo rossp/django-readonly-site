@@ -26,7 +26,7 @@ class ReadOnlySiteMiddleware(object):
         template = getattr(settings, 'READ_ONLY_TEMPLATE', None)
 
 
-        if request.method <> 'GET':
+        if request.method != 'GET':
             # Shortcut - will skip rest of this if statement
             # and just render the 'read only' template.
             pass
